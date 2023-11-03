@@ -1,0 +1,7 @@
+lihat informasi tenatng dpi nya
+	xdpyinfo | grep -B2 resolution
+
+setelah itu set dpinya ke 156 agar terlihat sedikit lebih jernih namun tetap ringan.
+	xrandr --dpi 156
+
+selesai.

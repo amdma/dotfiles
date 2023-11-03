@@ -1,0 +1,13 @@
+cara extrak file di thunar
+
+pertama kamu perlu install xarchiver
+	sudo xbps-install -Su file-roller
+
+dan kedua perlu juga plugin extraker untuk thunar agar lebih mudah dalam pengoprasian xarchivernya/ ketika akan meng extrak file nya.
+	sudo xbps-install -Su thunar-archive-plugin
+
+dann yang paling penting yaitu dukungan formatnya yang akan di extrak misal kamu akan meng extrak tar.xz yang kamu perlukan yaitu xz 
+	sudo xbps-install -Su xz unzip unrar 
+dll, sesuaikan dengan yang di butuhkan,, 3 diatas merupakan contoh archiver file yang sering di gunakan jadi kemunginan itu saja sudah cukup.
+
+sekian terimakasih.

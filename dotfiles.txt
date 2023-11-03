@@ -1,0 +1,58 @@
+berisi terkait dotfiles yang di gunakan dan cara pemasangan nya.
+ 
+1. themes : juno-palenihgt-v40
+2. icons  : papirus, tela, WhiteSur
+3. fonts  : google fons (sans, roboto regular, monospace Regular, (10)
+4. panel  : xfce4-panel
+5. terminal: kitty + fish
+6. dock   : Plank (uncheck shadow under dock window)
+7.
+
+cara pemasangan
+
+1. themes : 
+     - download juno theme
+     https://www.gnome-look.org/p/1280977/
+
+     - setelah selesai download extrak file tersebut
+
+     - setelah file berhasil di extrak pindah hasil extrakan tersebut ke "~/.themes". apabila belum memiliki folder ".themes" nya silahkan buat dulu secara manual.
+     $ mkdir ~/.themes
+
+     - lalu gunakan tema dengan cara di "Setting>Appearance>Themes> pilih tema yang ingin di pasang".
+
+
+2. icons :
+     - download dan install icons dengan cara:
+	*papirus : $sudo xbps-install papirus-icon-theme
+	*tela    : https://www.gnome-look.org/p/1279924/
+	*whiteSur: https://www.gnome-look.org/p/1405756/
+
+     - extrak file yang di download tadi (tela, whiteSure) ke "~/.icons"
+
+     - sama dengan theme tadi, semisal belum ada folede .icons nya silahkan buat secara manual.
+     $ mkdir ~/.icons
+
+     - lalu gunakan icons dengan cara di "Setting>Appearance>icons> pilih icon yang ingin di pasang".
+
+
+3. fonts : 
+     - untuk fonts sebenernya banyak yang perlu di install yaitu : Nerd-font, google-fonts, dll, tapi ini saja lebih dari cukup.
+     
+    - cara installnya:
+	$ sudo xbps-install -Su nerd-fonts google-fonts-ttf
+
+
+4. panel masih menngunakan bawaan dari xfce4 nya.. 
+
+
+5. terminal kita gunakan kitty dan shell nya fish
+
+
+6. Dock kita ganti dengan plank dan buat dia aktiv secara otomatis dengan cara
+
+    - cara install 
+	$ sudo xbps-install plank
+
+    - masuk ke Setting>Session&Startup>Aplication Autostart>add
+	lalu isi nama dengan "Plank", deskripsi dengan "startup plank", dan command dengan "plank"
